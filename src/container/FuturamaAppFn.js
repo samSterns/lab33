@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import QuoteList from '../components/quoteList/QuoteList.js';
-import { getAllQuotes } from '../services/QuoteFetcher.js';
-import useQuoteFetcher from '../hooks/request.js';
+import QuoteList from '../components/list/List.js';
+import { getAllQuotes } from '../services/callApi.js';
+import useCallApi from '../hooks/requests.js';
 
 
 const FuturamaAppFn = () => {
 
   const [quote, setQuote] = useState([]);
 
-  useQuoteFetcher();
+  useCallApi();
 
   const fetchQuote = () => {
     getAllQuotes()
