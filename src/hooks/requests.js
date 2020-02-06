@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getAllQuotes } from '../services/callApi.js';
 
+
 const useCallApi = () => {
 
   const [quote, setQuote] = useState([]);

@@ -13,3 +13,8 @@ Img{
   margin: 0px;
   transition: opacity 0.5s ease 0s;
 }
+
+.header {
+  list-style: none;
+  text-decoration: none;
+}
