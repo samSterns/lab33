@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 export const Quote = ({ text, character, image }) => {
-console.log(character);
   return (
     <div> 
       <Link to={`/${character}`}>
