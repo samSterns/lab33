@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 export const Quote = ({ text, character, image }) => {
-
+console.log(character);
   return (
     <div> 
-      <Link to={`/:${character}`}>
+      <Link to={`/${character}`}>
         <img src={image} />
-      </Link>
+      </Link> 
       <p>{text}</p>
       <p>{character}</p>
     </div>

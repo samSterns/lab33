@@ -14,7 +14,7 @@ const FuturamaAppFn = () => {
     getAllQuotes()
       .then(quote => setQuote(quote));
   };
-
+ 
   return (
     <>
       <button onClick={fetchQuote}>Get New Quotes</button>
